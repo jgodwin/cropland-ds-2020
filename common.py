@@ -28,6 +28,8 @@ NUMPY_KEYS = [key.split('.')[0] for key in IMAGE_KEYS]
 
 LABEL_KEY = 'cdl2017.tiff'
 
+LABEL_NUMPY_KEY = 'labels'
+
 def saveBytes(byteData,key):
     s3 = boto3.client('s3')
     response = s3.put_object(Key=key,Body=byteData,Bucket=BUCKET)
