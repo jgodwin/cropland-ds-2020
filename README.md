@@ -9,7 +9,9 @@ My main contribution is to investigate the use of unsupervised classification, a
 In this case, a 2D-convolutional neural network treats each of the temporal images as an additional set of channels, and then runs the convolution over the spatial dimensions of the "hyper" image. This has an advantage over the 1D convolutional neural network used by Rustowicz and bhaevesh in that it should allow for more spatial continuity in the predicted labels, as the 1D convolution does not take into account the spatial autocorrelation between nearby samples.  
 
 ## Results
-Below is a figure that shows the results of using a 2D convolutional neural network configured to predict 10 different classes
+Below is a figure that shows the results of using a 2D convolutional neural network configured to predict 10 different classes:
+
+<img src="raw_conv.png" alt="drawing" width="400"/>
 
 ## Code 
 All of the analysis for this project was done in Python, using a combination of standalone utility scripts and Jupyter notebooks. This work was mostly done using an Amazon SageMaker m5.xlarge instance, and I used a p2.xlarge instance for the convolutional neural network part.  Additionally, you will need to setup an S3 bucket named: cropland-ds for the data to go to.  If you want to use a different bucket name you'll need to edit: common.py which contains path constants for the buckets and folder structure.
