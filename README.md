@@ -40,4 +40,4 @@ The utilty scripts are:
 - preprocess.py - utilities to normalize the data and perform any other pre-processing
 - stats.py - utilties to compute summary statistics in a uniform way
 
-###Note: for the sake of expediency I have borrowed code snippets from other authors to help with reading the data from geotiff files.  Where I have done so, I have clearly accredited the original author.
+### Note: for the sake of expediency I have borrowed code snippets from other authors to help with reading the data from geotiff files.  Where I have done so, I have clearly accredited the original author.
